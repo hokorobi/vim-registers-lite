@@ -83,6 +83,7 @@ export def Popup(mode: string, is_delay: bool = false)
     endif
   endif
   winid = popup_atcursor(is_delay ? '' : items, {
+    border: [],
     mapping: 0,
     maxwidth: min([get(g:, 'registerslite_max_width', 32), &columns]),
     maxheight: maxheight,
